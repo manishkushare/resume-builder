@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <!-- link js -->
+    <script src="./form-personal-info.js" defer></script>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="assets/media/logo3.jpeg" alt="company logo"></a>
+
+        </div>
+    </header>
+    <article class="hero-form container">
+        <h1>Please fill form to get your custom CV</h1>
+    </article>
+    <article class="form-personal-info-section container">
+       
+        <form class="form" onsubmit="handleRefresh(event)">
+            <legend>
+                Personal Information
+            </legend>
+            <div class="personal-info">
+
+                <div class="grid name-info">
+                    <div class="last-name">
+                        <label  for="#">
+                            Last name
+                            <input type="text" class="form-name lastName" name="Last Name" placeholder="Enter your last Name" id="">
+                        </label>
+                    </div>
+                    
+                    <label class="first-name" for="#">
+                        First name
+                        <input type="text" name="First Name" class="firstName" placeholder="Enter your First Name" id="#">
+                    </label>
+                    <label class="middle-name" for="">
+                        Middle name
+                        <input type="text" name="Middle Name" class="middleName" placeholder="Enter your last Name" id="">
+                    </label>
+                </div>
+
+                <div class="address-info grid">
+                    <label for="">
+                        City
+                        <input type="text" name="city" class="city" placeholder="Enter city name" id="">
+                    </label>
+                    <label for="">
+                        District
+                        <input type="text" name="" class="district" placeholder="Enter District name" id="">
+                    </label>
+                    <label for="">
+                        State
+                        <input type="text" name="" class="state" placeholder="Enter State" id="">
+                    </label>
+                    <label for="">
+                        Zip Code
+                        <input type="number" name="" class="zipCode" placeholder="Enter zip code number" id="">
+                    </label>
+                </div>
+
+                <div class="contact-info grid">
+                    <label for="">
+                        Phone
+                        <input type="tel" class="phone"  placeholder="Please enter your mobile number">
+                    </label>
+                    <label for="">
+                        Email
+                        <input type="email" name="" class="email" placeholder="Please enter your valid email" id="">
+                    </label>
+                </div>
+
+                <div class="social-link grid">
+                    <label for="">
+                        Social Website
+                        <select name="social-website"  class="social-site">
+                            <option value="twitter">Twitter</option>
+                            <option value="linkedin">Linkedin</option>
+                            <option value="website">Personal Webiste</option>
+                        </select>
+                    </label>
+                    <label for="">
+                        Social-webiste url
+                        <input type="text" class="social-url" name="" placeholder="Enter url of selected social-website" id="">
+                    </label>
+                </div>
+                <div class="personal-ifo-btn">
+                    <input type="submit" class="personal-info-submit" value="Work Experience &#9755;">
+                </div>
+                
+            </div>
+            
+            
+        </form>
+    </article>
+    
+</body>
+</html>
